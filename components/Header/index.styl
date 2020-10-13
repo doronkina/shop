@@ -1,0 +1,63 @@
+$color-white = #fff
+$color-dark = #3f3f3f
+
+.headerContainer
+    padding 4u 2u
+    background-color $color-white
+    +tablet()
+        padding 4u
+
+.header
+    width 100%
+    max-width 200u
+    margin 0 auto
+    display flex
+    flex-direction row
+    justify-content space-between
+    align-items center
+
+.logo
+    width 15u
+    height 4u
+
+.nav
+    display none
+    +desktop()
+        display flex
+        flex-direction row
+
+.navItem
+    color $color-dark
+    +desktop()
+        margin-left 4u
+        text-transform uppercase
+
+.navItem.first
+    +desktop()
+        margin-left 0
+
+.actions
+    display flex
+    flex-direction row
+    align-items center
+
+.action
+    margin-left 4u
+
+.action.first
+    margin-left 0
+
+.icon
+    color $color-dark
+
+.burger
+    width 4u
+    height 4u
+    display flex
+    justify-content center
+    align-items center
+    border 1px solid $color-dark
+    +desktop()
+        width auto
+        height auto
+        border 0

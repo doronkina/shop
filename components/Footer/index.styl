@@ -1,0 +1,99 @@
+$color-lightgray = #f5f5f5
+$color-light = #7c7c7c
+$color-dark = #3f3f3f
+
+.footerContainer
+    padding 1u 2u 6u
+    background-color $color-lightgray
+    +tablet()
+        padding 7u 4u 12u
+
+.footer
+    width 100%
+    max-width 150u
+    margin 0 auto
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content space-between
+    align-items center
+
+.section
+    margin-top 5u
+
+.text
+    color $color-dark
+
+.soc
+    margin-top 2u
+    display flex
+    flex-direction row
+
+.socItem
+    width 4u
+    height 4u
+    margin-left 2u
+    display flex
+    justify-content center
+    align-items center
+    border 1px solid $color-dark
+    border-radius 2u
+
+.socItem.first
+    margin-left 0
+
+.icon
+    color $color-dark
+
+.logo
+    width 15u
+    height 4u
+    +tablet()
+        margin 0 auto
+
+.nav
+    margin-top 2u
+    display flex
+    flex-direction row
+
+.navItem
+    margin-left 1u
+    text-transform uppercase
+    color $color-dark
+    +tablet()
+        margin-left 3u
+    +desktop()
+        margin-left 5u
+
+.navItem.first
+    margin-left 0
+
+.hr
+    width 20u
+    height 1px
+    margin-top 2u
+    background-color $color-dark
+    +tablet()
+        margin-left auto
+        margin-right auto
+
+.copy
+    margin-top 2u
+    color $color-light
+    +tablet()
+        margin-left auto
+        margin-right auto
+
+.contactRow
+    margin-top 2u
+
+.contactRow.first
+    margin-top 0
+
+.contactType
+    text-transform uppercase
+    font-weight 500
+    color $color-dark
+
+.contact
+    color $color-light

@@ -1,0 +1,32 @@
+$color-white = #fff
+
+.pageContainer
+    padding 6u 2u
+    background-color $color-white
+    +tablet()
+        padding 13u 4u 8u
+    +desktop()
+        padding 13u 18u 8u
+        display flex
+        flex-direction row
+
+.page
+    width 100%
+    max-width 200u
+    margin 0 auto
+    +desktop()
+        display flex
+        flex-direction row
+
+.sidebar
+    width 100%
+    +desktop()
+        width 20%
+
+.main
+    width 100%
+    margin-top 6u
+    +desktop()
+        width 80%
+        margin-top 0
+        padding-left 6u

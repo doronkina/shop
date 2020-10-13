@@ -1,0 +1,31 @@
+$color-light = #7c7c7c
+$color-dark = #3f3f3f
+
+.breadcrumbsBg
+    height 26u
+    +tablet()
+        height 35u
+    +desktop()
+        height 63u
+
+.breadcrumbsContainer
+    margin auto 2u
+    +tablet()
+        margin auto 6u
+    +desktop()
+        margin auto 47u
+
+.pageTitle
+    font-size 5u
+    font-weight 800
+    color $color-dark
+
+.breadcrumbs
+    margin-top 2u
+
+.breadcrumb
+    text-transform uppercase
+    color $color-light
+
+.breadcrumb.last
+    color $color-dark
