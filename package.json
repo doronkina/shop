@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@react-native-community/picker": "^1.8.1",
     "@startupjs/ui": "^0.23.47",
     "axios": "^0.20.0",
     "nconf": "^0.10.0",
@@ -30,6 +31,7 @@
     "react-dom": "^16.13.1",
     "react-native": "0.63.3",
     "react-native-collapsible": "1.5.2",
+    "react-native-picker-select": "^8.0.1",
     "react-native-svg": "^12.1.0",
     "react-native-web": "^0.12.0",
     "startupjs": "^0.23.47"

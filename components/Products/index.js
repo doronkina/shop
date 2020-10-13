@@ -2,12 +2,20 @@ import { BASE_URL } from '@env'
 import React from 'react'
 import { observer, u } from 'startupjs'
 import { View, Text, Image, TouchableOpacity, Linking } from 'react-native'
+import RNPickerSelect from 'react-native-picker-select'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faTable } from '@fortawesome/free-solid-svg-icons'
 import './index.styl'
 
 export default observer(() => {
+    const [pickerValue, setPickerValue] = React.useState('Default')
     const [viewType, setViewType] = React.useState('grid')
+    
+    const pickerItems = [
+        {label: 'A to Z', value: '1'},
+        {label: 'Z to A', value: '2'},
+        {label: 'In stock', value: '3'}
+    ]
 
     const activeView = (item) => {
         if (viewType === item) return 'active'
@@ -147,7 +155,7 @@ export default observer(() => {
                     Text.redText 50
                 View.sort
                     Text.text Sort By : 
-                    Text.text Picker
+                    RNPickerSelect(onValueChange=(value) => setPickerValue(value) items=pickerItems placeholder={label: 'Default', value: '0'})
                 View.view
                     TouchableOpacity.viewItem(styleName='first' onPress=() => setViewType('grid'))
                         FontAwesomeIcon.viewIcon(styleName={active: activeView('grid')} icon=faTable size=u(4))
